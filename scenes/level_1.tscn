@@ -10,4 +10,7 @@ position = Vector2(21, 19)
 
 [node name="Bounds" parent="." instance=ExtResource("2_g1152")]
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="body_entered" from="Bounds" to="Snake" method="_on_bounds_body_entered"]
