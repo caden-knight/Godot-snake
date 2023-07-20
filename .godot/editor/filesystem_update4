@@ -1,3 +1,4 @@
-res://scenes/snake.tscn
-res://scripts/SnakeMovement.gd
 res://scenes/level_1.tscn
+res://scenes/snake.tscn
+res://scenes/game_bounds.tscn
+res://scripts/SnakeMovement.gd

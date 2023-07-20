@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://mg180fo21bav"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_61yje"]
+a = Vector2(2, 650)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_kr7go"]
+a = Vector2(1149, 3)
+b = Vector2(2, 0)
+
+[node name="Bounds" type="Area2D"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="LeftWall" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_61yje")
+
+[node name="RightWall" type="CollisionShape2D" parent="."]
+position = Vector2(1149, -8)
+shape = SubResource("SegmentShape2D_61yje")
+
+[node name="TopWall" type="CollisionShape2D" parent="."]
+shape = SubResource("SegmentShape2D_kr7go")
+
+[node name="BottomWall" type="CollisionShape2D" parent="."]
+position = Vector2(4, 643)
+shape = SubResource("SegmentShape2D_kr7go")

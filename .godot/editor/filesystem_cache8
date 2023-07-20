@@ -1,7 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1689363071
+::res://::1689826916
 icon.svg::CompressedTexture2D::6728654153218500484::1689305343::1689305356::1::::<><>::
-::res://assets/::1689309200
-level_1.tscn::PackedScene::5692530050809134241::1689309198::0::1::::<><>::
-snake.tscn::PackedScene::6764551590746353265::1689309200::0::1::::<><>::uid://c24n7lfu23fiq::::res://icon.svg
-::res://scripts/::1689307861
+::res://assets/::1689724349
+emojis.jpg::CompressedTexture2D::8033184985969143259::1689724345::1689724349::1::::<><>::
+::res://scenes/::1689738054
+level_1.tscn::PackedScene::5692530050809134241::1689738054::0::1::::<><>::uid://c3m2f85xjoy6t::::res://scenes/snake.tscn
+snake.tscn::PackedScene::6764551590746353265::1689737998::0::1::::<><>::uid://c24n7lfu23fiq::::res://icon.svg<>res://scripts/SnakeMovement.gd
+::res://scripts/::1689738054
+SnakeMovement.gd::GDScript::-1::1689738054::0::1::::<>CharacterBody2D<>::
