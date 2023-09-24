@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://c3m2f85xjoy6t"]
 
 [ext_resource type="Texture2D" uid="uid://c24n7lfu23fiq" path="res://icon.svg" id="1_6fy81"]
-[ext_resource type="Script" path="res://scripts/SnakeMovement.gd" id="1_relaq"]
+[ext_resource type="Script" path="res://scripts/Movement.cs" id="1_ci214"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4pm52"]
 size = Vector2(129.5, 131)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Snake" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
-script = ExtResource("1_relaq")
+script = ExtResource("1_ci214")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

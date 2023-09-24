@@ -1,0 +1,17 @@
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\bin\Debug\Godot-snake.deps.json
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\bin\Debug\Godot-snake.runtimeconfig.json
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\bin\Debug\Godot-snake.dll
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\bin\Debug\Godot-snake.pdb
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\bin\Debug\GodotSharp.dll
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.csproj.AssemblyReference.cache
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.GeneratedMSBuildEditorConfig.editorconfig
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.AssemblyInfoInputs.cache
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.AssemblyInfo.cs
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.csproj.CoreCompileInputs.cache
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.csproj.CopyComplete
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.dll
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\refint\Godot-snake.dll
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.pdb
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\Godot-snake.genruntimeconfig.cache
+A:\GameDev\Godot\godot-projects\Godot-snake\.godot\mono\temp\obj\Debug\ref\Godot-snake.dll
