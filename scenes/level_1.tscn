@@ -16,5 +16,3 @@ autostart = true
 
 [node name="Apple" parent="." instance=ExtResource("3_2rvsj")]
 position = Vector2(332, 26)
-
-[connection signal="body_entered" from="Bounds" to="Snake" method="_on_bounds_body_entered"]

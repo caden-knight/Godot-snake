@@ -6,59 +6,59 @@ public partial class Movement : CharacterBody2D
 {
 	[Export]
 	private float speed = 300f;
-
-	public enum Direction
-	{
-		UP,
-		DOWN,
-		LEFT,
-		RIGHT
-	}
-	public Direction currentDirection = Direction.RIGHT;
+	public Singleton singleton;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-
+		singleton = GetNode<Singleton>("/root/Singleton");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		ProcessMovement(currentDirection);
+		ProcessMovement(singleton.currentDirection);
 
 		MoveAndSlide();
 	}
 
-	void ProcessMovement(Direction direction)
+	void ProcessMovement(Singleton.Direction direction)
 	{
 		switch (direction)
 		{
-			case Direction.RIGHT:
+			case Singleton.Direction.RIGHT:
 				Velocity = Vector2.Right * speed;
 				break;
-			case Direction.LEFT:
+			case Singleton.Direction.LEFT:
 				Velocity = Vector2.Left * speed;
 				break;
-			case Direction.UP:
+			case Singleton.Direction.UP:
 				Velocity = Vector2.Up * speed;
 				break;
-			case Direction.DOWN:
+			case Singleton.Direction.DOWN:
 				Velocity = Vector2.Down * speed;
 				break;
 			default:
-				Velocity = Vector2.Right * speed;
+				Velocity = Vector2.Right * 0;
 				break;
 
 		}
 
 		if (Input.IsActionJustPressed("right"))
 		{
-			currentDirection = Direction.RIGHT;
+			singleton.currentDirection = Singleton.Direction.RIGHT;
 		}
 		else if (Input.IsActionJustPressed("down"))
 		{
-			currentDirection = Direction.DOWN;
+			singleton.currentDirection = Singleton.Direction.DOWN;
+		}
+		else if (Input.IsActionJustPressed("up"))
+		{
+			singleton.currentDirection = Singleton.Direction.UP;
+		}
+		else if (Input.IsActionJustPressed("left"))
+		{
+			singleton.currentDirection = Singleton.Direction.LEFT;
 		}
 	}
 }

@@ -1,5 +1,10 @@
-res://scenes/snake.tscn
+res://scenes/level_1.tscn
 res://scenes/game_bounds.tscn
+res://scenes/snake.tscn
 res://scenes/apple.tscn
+res://scenes/GameBounds.cs
 res://scripts/Movement.cs
 res://scripts/snake.cs
+res://scripts/Apple.cs
+res://scripts/GameBounds.cs
+res://scripts/Singleton.cs
