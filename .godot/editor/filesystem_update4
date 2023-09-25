@@ -8,3 +8,4 @@ res://scripts/snake.cs
 res://scripts/Apple.cs
 res://scripts/GameBounds.cs
 res://scripts/Singleton.cs
+res://scripts/AppleTimer.cs

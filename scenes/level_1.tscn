@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cndrex2xqncl2"]
+[gd_scene load_steps=5 format=3 uid="uid://cndrex2xqncl2"]
 
 [ext_resource type="PackedScene" uid="uid://c3m2f85xjoy6t" path="res://scenes/snake.tscn" id="1_kmeoj"]
 [ext_resource type="PackedScene" uid="uid://mg180fo21bav" path="res://scenes/game_bounds.tscn" id="2_g1152"]
 [ext_resource type="PackedScene" uid="uid://6sxjiaqr1kht" path="res://scenes/apple.tscn" id="3_2rvsj"]
+[ext_resource type="Script" path="res://scripts/AppleTimer.cs" id="3_k18d5"]
 
 [node name="Level1" type="Node2D"]
 
@@ -11,8 +12,11 @@ position = Vector2(21, 19)
 
 [node name="Bounds" parent="." instance=ExtResource("2_g1152")]
 
-[node name="Timer" type="Timer" parent="."]
+[node name="AppleTimer" type="Timer" parent="."]
 autostart = true
+script = ExtResource("3_k18d5")
 
 [node name="Apple" parent="." instance=ExtResource("3_2rvsj")]
 position = Vector2(332, 26)
+
+[connection signal="timeout" from="AppleTimer" to="AppleTimer" method="OnTimeout"]
