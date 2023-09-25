@@ -12,4 +12,5 @@ public partial class Singleton : Node
 		RIGHT
 	}
 	public Direction currentDirection = Direction.RIGHT;
+	public int score = 0;
 }
