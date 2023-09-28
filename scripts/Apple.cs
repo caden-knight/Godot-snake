@@ -5,16 +5,12 @@ public partial class Apple : Area2D
 {
 	private Singleton singleton;
 	// private Resource cloneScene = ResourceLoader.Load();
-	private Label scoreLabel;
 
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		singleton = GetNode<Singleton>("/root/Singleton");
-		scoreLabel = GetNode<Control>("/root/Level1/Score").GetChild<Label>(0);
-		GD.Print(scoreLabel);
-
 
 	}
 
@@ -29,6 +25,6 @@ public partial class Apple : Area2D
 		QueueFree();
 		singleton.appleCollected = true;
 		singleton.score++;
-		scoreLabel.Text = singleton.score.ToString();
+		singleton.scoreLabel.Text = singleton.score.ToString();
 	}
 }

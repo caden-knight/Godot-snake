@@ -13,9 +13,13 @@ public partial class Singleton : Node
 	}
 	public Direction currentDirection = Direction.RIGHT;
 	public int score = 0;
+	public Label scoreLabel;
+
+
 
 	public override void _Ready()
 	{
+		scoreLabel = GetNode<Control>("/root/Level1/Score").GetChild<Label>(0);
 
 	}
 }

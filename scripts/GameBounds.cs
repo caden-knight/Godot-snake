@@ -15,5 +15,7 @@ public partial class GameBounds : Area2D
 		body.Position = new Vector2(200, 50);
 		singleton.currentDirection = Singleton.Direction.DOWN;
 		singleton.score = 0;
+		singleton.scoreLabel.Text = singleton.score.ToString();
+
 	}
 }

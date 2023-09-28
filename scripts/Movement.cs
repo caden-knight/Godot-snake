@@ -8,12 +8,16 @@ public partial class Movement : CharacterBody2D
 	private float speed = 300f;
 	public Singleton singleton;
 	private snake cloneScene;
+	private Apple apple;
+
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		// @onready vars
 		singleton = GetNode<Singleton>("/root/Singleton");
+		apple = GetNode<Apple>("/root/Level1/Apple");
+
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
