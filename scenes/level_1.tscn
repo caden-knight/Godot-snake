@@ -10,9 +10,9 @@
 [node name="Level1" type="Node2D"]
 
 [node name="BG" type="Sprite2D" parent="."]
-position = Vector2(577, 337)
-scale = Vector2(1.60686, 1.8261)
+scale = Vector2(1.57065, 1.77446)
 texture = ExtResource("1_e4lx7")
+centered = false
 
 [node name="Snake" parent="." instance=ExtResource("1_kmeoj")]
 position = Vector2(21, 19)

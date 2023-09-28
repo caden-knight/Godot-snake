@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://g74kx0l4da2b"]
 
-[ext_resource type="Script" path="res://scenes/Score.cs" id="1_2h38i"]
+[ext_resource type="FontFile" uid="uid://hofslbyonm31" path="res://assets/fonts/BMfigaro.TTF" id="2_btxsh"]
 
 [node name="Score" type="Control"]
 layout_mode = 3
@@ -9,13 +9,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_2h38i")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
+offset_left = 3.0
 offset_right = 1148.0
-offset_bottom = 635.0
-theme_override_font_sizes/font_size = 36
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.898039, 0.85098, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_btxsh")
+theme_override_font_sizes/font_size = 60
 text = "0
 "
 horizontal_alignment = 1
+vertical_alignment = 1

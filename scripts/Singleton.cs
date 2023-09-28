@@ -13,4 +13,9 @@ public partial class Singleton : Node
 	}
 	public Direction currentDirection = Direction.RIGHT;
 	public int score = 0;
+
+	public override void _Ready()
+	{
+
+	}
 }

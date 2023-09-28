@@ -7,10 +7,12 @@ public partial class Movement : CharacterBody2D
 	[Export]
 	private float speed = 300f;
 	public Singleton singleton;
+	private snake cloneScene;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		// @onready vars
 		singleton = GetNode<Singleton>("/root/Singleton");
 	}
 
