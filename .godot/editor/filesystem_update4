@@ -1,12 +1,5 @@
-res://scenes/level_1.tscn
-res://scenes/snake.tscn
-res://scenes/game_bounds.tscn
-res://scenes/apple.tscn
-res://scenes/score.tscn
 res://scripts/Apple.cs
 res://scripts/AppleTimer.cs
 res://scripts/GameBounds.cs
 res://scripts/Movement.cs
-res://scripts/Score.cs
 res://scripts/Singleton.cs
-res://scripts/snake.cs

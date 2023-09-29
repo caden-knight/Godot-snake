@@ -1,15 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nBUliUhgDGgDIg5Q1Hpyppc4ZRYzmZbuP3XooVtjYB3Y+a9Kb5sKXKosT63QZOvFSnCL8c2jSw7l0H5TywtVwA==",
+  "dgSpecHash": "6nFGtKNsdsYsag+er1Fol1bZpAo+5YViV4zhNyViXAYEB0DMlK/drLaMc/Kvi/mhEIAqX0ehz2J/+aSUpCemmw==",
   "success": true,
-  "projectFilePath": "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
+  "projectFilePath": "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caden\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
     "C:\\Users\\caden\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",
-    "C:\\Users\\caden\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512",
-    "C:\\Users\\caden\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\caden\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
-    "C:\\Users\\caden\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512"
+    "C:\\Users\\caden\\.nuget\\packages\\godotsharpeditor\\4.1.1\\godotsharpeditor.4.1.1.nupkg.sha512"
   ],
   "logs": []
 }

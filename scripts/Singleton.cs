@@ -6,12 +6,12 @@ public partial class Singleton : Node
 	public bool appleCollected = false;
 	public enum Direction
 	{
-		UP,
-		DOWN,
-		LEFT,
-		RIGHT
+		NORTH,
+		SOUTH,
+		EAST,
+		WEST
 	}
-	public Direction currentDirection = Direction.RIGHT;
+	public Direction currentDirection = Direction.EAST;
 	public int score = 0;
 	public Label scoreLabel;
 

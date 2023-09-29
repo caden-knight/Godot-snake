@@ -1,3 +1,4 @@
 {
-    "godot_tools.editor_path": "a:\\GameDev\\Godot\\godot-executables\\c#-godot\\Godot_v4.1.1-stable_mono_win64\\Godot_v4.1.1-stable_mono_win64.exe"
+    "godot_tools.editor_path": "a:\\GameDev\\Godot\\godot-executables\\c#-godot\\Godot_v4.1.1-stable_mono_win64\\Godot_v4.1.1-stable_mono_win64.exe",
+    "dotnet.defaultSolution": "Godot-snake.sln"
 }

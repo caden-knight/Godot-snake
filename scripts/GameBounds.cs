@@ -13,9 +13,8 @@ public partial class GameBounds : Area2D
 	private void OnBodyEntered(Node2D body)
 	{
 		body.Position = new Vector2(200, 50);
-		singleton.currentDirection = Singleton.Direction.DOWN;
+		singleton.currentDirection = Singleton.Direction.SOUTH;
 		singleton.score = 0;
 		singleton.scoreLabel.Text = singleton.score.ToString();
-
 	}
 }

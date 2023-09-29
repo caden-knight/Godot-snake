@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Diagnostics;
+using System.Drawing;
 
 public partial class Movement : CharacterBody2D
 {
@@ -9,6 +10,9 @@ public partial class Movement : CharacterBody2D
 	public Singleton singleton;
 	private snake cloneScene;
 	private Apple apple;
+	private PackedScene snakeCloneScene;
+	public CharacterBody2D snakeClone;
+	
 
 
 	// Called when the node enters the scene tree for the first time.
@@ -17,7 +21,7 @@ public partial class Movement : CharacterBody2D
 		// @onready vars
 		singleton = GetNode<Singleton>("/root/Singleton");
 		apple = GetNode<Apple>("/root/Level1/Apple");
-
+		snakeCloneScene = ResourceLoader.Load<PackedScene>("res://scenes/snake.tscn");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,16 +36,16 @@ public partial class Movement : CharacterBody2D
 	{
 		switch (direction)
 		{
-			case Singleton.Direction.RIGHT:
+			case Singleton.Direction.EAST:
 				Velocity = Vector2.Right * speed;
 				break;
-			case Singleton.Direction.LEFT:
+			case Singleton.Direction.WEST:
 				Velocity = Vector2.Left * speed;
 				break;
-			case Singleton.Direction.UP:
+			case Singleton.Direction.NORTH:
 				Velocity = Vector2.Up * speed;
 				break;
-			case Singleton.Direction.DOWN:
+			case Singleton.Direction.SOUTH:
 				Velocity = Vector2.Down * speed;
 				break;
 			default:
@@ -52,19 +56,26 @@ public partial class Movement : CharacterBody2D
 
 		if (Input.IsActionJustPressed("right"))
 		{
-			singleton.currentDirection = Singleton.Direction.RIGHT;
+			singleton.currentDirection = Singleton.Direction.EAST;
 		}
 		else if (Input.IsActionJustPressed("down"))
 		{
-			singleton.currentDirection = Singleton.Direction.DOWN;
+			singleton.currentDirection = Singleton.Direction.SOUTH;
 		}
 		else if (Input.IsActionJustPressed("up"))
 		{
-			singleton.currentDirection = Singleton.Direction.UP;
+			singleton.currentDirection = Singleton.Direction.NORTH;
 		}
 		else if (Input.IsActionJustPressed("left"))
 		{
-			singleton.currentDirection = Singleton.Direction.LEFT;
+			singleton.currentDirection = Singleton.Direction.WEST;
 		}
+	}
+
+	private void OnAppleBodyEntered(Node2D _body)
+	{
+		snakeClone = snakeCloneScene.Instantiate() as CharacterBody2D;
+		AddChild(snakeClone);
+		snakeClone.Position = new Vector2(100, 100);
 	}
 }

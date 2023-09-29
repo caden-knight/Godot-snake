@@ -11,7 +11,6 @@ public partial class Apple : Area2D
 	public override void _Ready()
 	{
 		singleton = GetNode<Singleton>("/root/Singleton");
-
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
