@@ -1,18 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3m2f85xjoy6t"]
+[gd_scene load_steps=4 format=3 uid="uid://bamagpm7icu32"]
 
-[ext_resource type="Texture2D" uid="uid://c24n7lfu23fiq" path="res://icon.svg" id="1_6fy81"]
-[ext_resource type="Script" path="res://scripts/Movement.cs" id="1_ci214"]
+[ext_resource type="Script" path="res://scripts/SnakeTail.cs" id="1_xld3q"]
+[ext_resource type="Texture2D" uid="uid://c24n7lfu23fiq" path="res://icon.svg" id="2_g12cj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4pm52"]
 size = Vector2(129.5, 131)
 
-[node name="SnakeHead" type="CharacterBody2D"]
+[node name="SnakeTail" type="CharacterBody2D"]
 scale = Vector2(0.3, 0.3)
-script = ExtResource("1_ci214")
+script = ExtResource("1_xld3q")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_6fy81")
+texture = ExtResource("2_g12cj")
 centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

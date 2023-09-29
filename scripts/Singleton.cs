@@ -14,6 +14,7 @@ public partial class Singleton : Node
 	public Direction currentDirection = Direction.EAST;
 	public int score = 0;
 	public Label scoreLabel;
+	public bool createSnakeTail = false;
 
 
 

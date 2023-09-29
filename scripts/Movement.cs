@@ -8,11 +8,11 @@ public partial class Movement : CharacterBody2D
 	[Export]
 	private float speed = 300f;
 	public Singleton singleton;
-	private snake cloneScene;
 	private Apple apple;
 	private PackedScene snakeCloneScene;
 	public CharacterBody2D snakeClone;
-	
+	public int count = 0;
+
 
 
 	// Called when the node enters the scene tree for the first time.
@@ -21,7 +21,7 @@ public partial class Movement : CharacterBody2D
 		// @onready vars
 		singleton = GetNode<Singleton>("/root/Singleton");
 		apple = GetNode<Apple>("/root/Level1/Apple");
-		snakeCloneScene = ResourceLoader.Load<PackedScene>("res://scenes/snake.tscn");
+		snakeCloneScene = ResourceLoader.Load<PackedScene>("res://scenes/snakeTail.tscn");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -70,12 +70,13 @@ public partial class Movement : CharacterBody2D
 		{
 			singleton.currentDirection = Singleton.Direction.WEST;
 		}
-	}
 
-	private void OnAppleBodyEntered(Node2D _body)
-	{
-		snakeClone = snakeCloneScene.Instantiate() as CharacterBody2D;
-		AddChild(snakeClone);
-		snakeClone.Position = new Vector2(100, 100);
+		if (singleton.createSnakeTail)
+		{
+			snakeClone = snakeCloneScene.Instantiate<CharacterBody2D>();
+			snakeClone.Position = Position + Vector2.Up * 10;
+			GetTree().Root.AddChild(snakeClone);
+			singleton.createSnakeTail = false;
+		}
 	}
 }

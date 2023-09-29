@@ -23,6 +23,7 @@ public partial class Apple : Area2D
 	{
 		QueueFree();
 		singleton.appleCollected = true;
+		singleton.createSnakeTail = true;
 		singleton.score++;
 		singleton.scoreLabel.Text = singleton.score.ToString();
 	}
