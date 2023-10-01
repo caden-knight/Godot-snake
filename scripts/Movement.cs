@@ -15,6 +15,7 @@ public partial class Movement : CharacterBody2D
 
 
 
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -74,8 +75,12 @@ public partial class Movement : CharacterBody2D
 		if (singleton.createSnakeTail)
 		{
 			snakeClone = snakeCloneScene.Instantiate<CharacterBody2D>();
-			snakeClone.Position = Position + Vector2.Up * 10;
-			GetTree().Root.AddChild(snakeClone);
+			// snakeClone.Position = Position + Vector2.Up * 10;
+			Vector2 size = GetChild<Sprite2D>(0).Texture.GetSize();
+			snakeClone.Velocity = Vector2.Zero;
+			snakeClone.Scale = Scale * 4;
+			snakeClone.Position = new Vector2(Position.X - size.X, Position.Y);
+			AddChild(snakeClone);
 			singleton.createSnakeTail = false;
 		}
 	}

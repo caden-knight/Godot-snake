@@ -7,7 +7,7 @@
 size = Vector2(129.5, 131)
 
 [node name="SnakeHead" type="CharacterBody2D"]
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.25, 0.25)
 script = ExtResource("1_ci214")
 metadata/_edit_group_ = true
 

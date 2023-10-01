@@ -3,11 +3,10 @@ res://scenes/snake.tscn
 res://scenes/game_bounds.tscn
 res://scenes/apple.tscn
 res://scenes/score.tscn
+res://scenes/snakeTail.tscn
 res://scripts/Apple.cs
 res://scripts/AppleTimer.cs
 res://scripts/GameBounds.cs
 res://scripts/Movement.cs
 res://scripts/Singleton.cs
-res://scenes/SnakeTail.cs
-res://scenes/snakeTail.tscn
 res://scripts/SnakeTail.cs
