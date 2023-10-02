@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mAXWdqOR5XONVKPY1v9U1YLxaH2G06+izmC1EjoL8pwEFvUWGVroChOf2O4TMBrMZt0OojbluY4eFADtAlyr0g==",
+  "dgSpecHash": "6nFGtKNsdsYsag+er1Fol1bZpAo+5YViV4zhNyViXAYEB0DMlK/drLaMc/Kvi/mhEIAqX0ehz2J/+aSUpCemmw==",
   "success": true,
-  "projectFilePath": "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
+  "projectFilePath": "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caden\\.nuget\\packages\\godot.sourcegenerators\\4.1.1\\godot.sourcegenerators.4.1.1.nupkg.sha512",
     "C:\\Users\\caden\\.nuget\\packages\\godotsharp\\4.1.1\\godotsharp.4.1.1.nupkg.sha512",

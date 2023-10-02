@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj": {}
+    "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj": {}
   },
   "projects": {
-    "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj": {
+    "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
+        "projectUniqueName": "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
         "projectName": "Godot-snake",
-        "projectPath": "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
+        "projectPath": "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\Godot-snake.csproj",
         "packagesPath": "C:\\Users\\caden\\.nuget\\packages\\",
-        "outputPath": "A:\\GameDev\\Godot\\godot-projects\\Godot-snake\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "a:\\GameDev\\Godot\\godot-projects\\Godot-snake\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caden\\AppData\\Roaming\\NuGet\\NuGet.Config"
